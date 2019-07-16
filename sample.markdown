@@ -1,0 +1,24 @@
+---
+title: "What Are Annotations?"
+description: "Annotations allow users to add custom content on PDF pages."
+preview_image: /images/blog/2018/what-are-annotations/article-header.png
+section: blog
+author: Tomáš Šurín
+date: 2018-01-08 10:00 UTC
+tags: Development, PDF, Annotations
+published: true
+---
+
+This post will discuss what PDF annotations are, exploring which types of annotations are defined by the PDF specification. It will also look into how annotations are represented inside a PDF document. Finally, it will outline how PSPDFKit maps this representation to an easy-to-use annotation model.
+
+READMORE
+
+![Annotations](/images/blog/2018/what-are-annotations/article-header.png)
+
+## What Are PDF Annotations?
+
+Content displayed as a PDF page is not suitable for easy editing, but the PDF specification defines a comprehensive set of objects that can be added to PDF pages without changing the page content. These objects are called annotations, and their purpose ranges from marking up page content to implementing interactive features such as forms.
+
+PDF viewers usually allow the creation and editing of various annotation types, e.g. text highlights, notes, lines, or shapes. Regardless of the annotation types that can be created, PDF viewers conforming to the PDF specification should also support rendering for all annotation types.
+
+## Annotation Types
